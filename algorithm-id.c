@@ -7,16 +7,15 @@ const bool IdIsValid(char * NumberID);
 bool IdIsValid(char * NumberID){
 	int Isummary = 0;
 	int IsIdCalc = 0;
-	int ReturnInteger = * int(int Number){ return Number - '0';};
 	for(int i=0; i < strlen(NumberID); i++){
 		Isummary++;
 		char data[10];
-		int INumOneTime = ReturnInteger(NumberID[i]);
+		int INumOneTime = NumberID[i] - '0';
 		int DuobleLoop = INumOneTime * Isummary;
 		if (DuobleLoop > MaxSize){
 		sprintf(data, "%d", DuobleLoop);
 		for(int SecondLoop = 0; SecondLoop < strlen(data); SecondLoop++){
-			IsIdCalc += ReturnInteger(data[SecondLoop]);
+			IsIdCalc += data[SecondLoop] - '0';
 		}
 		}else
 			IsIdCalc += INumOneTime * Isummary;
